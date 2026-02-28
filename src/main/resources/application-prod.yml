@@ -1,0 +1,18 @@
+# Application Production Configuration
+
+# Define any necessary production configurations here.
+# This file is used for setting application properties for the production environment.
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: controlm-job-monitoring-agent
+  datasource:
+    url: jdbc:mysql://localhost:3306/your_db_name
+    username: your_username
+    password: your_password
+  jpa:
+    hibernate:
+      ddl-auto: update
